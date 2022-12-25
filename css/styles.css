@@ -154,7 +154,7 @@ header .logo-text-secondary {
     padding-top: 24px;
     padding-bottom: 24px;
     
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .current,
@@ -186,14 +186,17 @@ header .logo-text-secondary {
 /* ==================== MAIN ==================== */
 
 .hero {
-    background: #2E2F42;
+    background-color: #2E2F42;
     text-align: center;
+    width: 1440px;
+    margin: 0 auto; 
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+   
 }
 
 .hero-title {
@@ -559,7 +562,11 @@ footer .logo-text-secondary {
     padding: 12px 24px;
     border-radius: 4px;
 
-    transition: color var(--transition), background-color var(--transition);
+    transition: color var(--transition), 
+                background-color var(--transition), 
+                border-color var(--transition),
+                box-shadow var(--transition);
+
 }
 
 .portfolio-btn:hover,
